@@ -49,4 +49,3 @@ var education = { };
 
  $("#main").append(education.name);
  $("#main").append("<br>", work["jobPosition"]); //<br> new line
-
