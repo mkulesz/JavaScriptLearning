@@ -45,9 +45,8 @@ var education = { };
  var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
  $("#header").prepend(formattedRole);
- $("#header").prepend(formattedName);
-
- 
+ $("#header").prepend(formattedName); 
 
  $("#main").append(education.name);
- $("#main").append(work["jobPosition"]);
+ $("#main").append("<br>", work["jobPosition"]); //<br> new line
+
