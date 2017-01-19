@@ -1,45 +1,56 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
- var awesomeThoughts = "I am Mike and I am AWESOME!";
-
- //console.log(awesomeThoughts);
-
- var funthoughts = awesomeThoughts.replace("AWESOME", "FUN");
-
- //$("#main").append(funthoughts);
-
-
- /*
- $("#header").prepend(formattedRole);
- $("#header").prepend(formattedName);
-*/
-var skills = ["ABAP", "programming", "Java"];
-var contactInfo = "tel. 123456789";
-var pictureURL = "images/fry.jpg";
-var welcomeMessage = "Witam";
-
 var bio = {
-	"name" : "Michał Kulesz",
-	"role" : "Konsultant SAP",
-	"contacts" : {
-		"mobile" : contactInfo
-	} ,
-	"welcomeMessage" : welcomeMessage,
-	"skills" : skills ,
-	"biopic" : pictureURL
-};
+	"name": "Michał Kulesz",
+	"role": "Konsultant SAP",
+	"contacts": ["tel. 123456789"],
+	"welcomeMessage": "Witam",
+	"skills": ["C", "C#.NET", "JAVA", "ABAP", "SAP", "JavaScript"]
+}
 
-var work = { };
-	work.jobPosition = "Młodszy programista ABAP";
-	work.employer = "KBJ";
-	work.yearsWorked = "2 months";
-	work.city = "Warszawa";
+var work = { 
+	"jobPosition": "Młodszy programista ABAP",
+	"employer": "KBJ",
+	"yearsWorked": "2 months",
+	"city": "Warszawa"
+}
+var education = {
+	"schools" :[
+	{
+		"name": "Uniwersytet Gdański",
+		"years": "3 years",
+		"city": "Gdańsk"
+	},
+	{
+		"name": "Uniwersytet Gdański",
+		"years": "2 years",
+		"city": "Gdańsk"
+	}
+	]
+}
+var projects = {
+	"projects": [
+	{
+		"title": "Sample Project 1",
+		"dates": "2016",
+		"description": "Sample Text",
+		"images": [
 
-var education = { };
-	education["name"] = "Uniwersytet Gdański";
-	education["years"] = "5 years";
-	education["city"] = "Gdańsk";
+		]
+	},
+	[
+	{
+		"title": "Praktyki",
+		"dates": "2014",
+		"description": "Konwersja HTML na PDF",
+		"images": [
+
+		]
+	}
+	]
+	]
+}
 
  var formattedName = HTMLheaderName.replace("%data%", bio.name);
  var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
